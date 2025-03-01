@@ -1,20 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ораза (Рамадан) 2025 адвент календарь</title>
+    <meta name="description"
+        content="Интерактивный календарь Рамадана 2025 года. Ежедневные советы, духовные наставления и подготовка к посту. Присоединяйтесь к нашему путешествию в священный месяц Рамадан!">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./img/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://muhamed-kanapiya.github.io/oraza/">
+    <meta property="og:title" content="Ораза (Рамадан) 2025 адвент календарь">
+    <meta property="og:description"
+        content="Интерактивный календарь Рамадана 2025 года. Ежедневные советы, духовные наставления и подготовка к посту.">
+    <meta property="og:image" content="./img/og-poster.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://muhamed-kanapiya.github.io/oraza/">
+    <meta property="twitter:title" content="Ораза (Рамадан) 2025 адвент календарь">
+    <meta property="twitter:description"
+        content="Интерактивный календарь Рамадана 2025 года. Ежедневные советы, духовные наставления и подготовка к посту.">
+    <meta property="twitter:image" content="./img/og-poster.jpg">
+    <script type='text/javascript'
+        src='https://platform-api.sharethis.com/js/sharethis.js#property=67c2e75af80bb90012167e0b&product=image-share-buttons'
+        async='async'></script>
 </head>
 
 <body class="light-theme">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+        ym(100124885, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/100124885" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 
     <div class="main-container">
         <div class="calendar-side">
@@ -27,10 +67,8 @@
                 <div class="calendar-grid" id="calendarGrid"></div>
             </div>
             <div class="social-links">
-                <script src="https://yastatic.net/share2/share.js"></script>
-                <div class="ya-share2" data-curtain data-size="l" data-limit="5"
-                    data-services="vkontakte,telegram,twitter,whatsapp">
-                </div>
+                <!-- ShareThis BEGIN -->
+                <div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
             </div>
 
         </div>
