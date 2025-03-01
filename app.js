@@ -353,6 +353,12 @@ function showDayContent(day) {
   history.replaceState(null, null, `#day${day}`);
 }
 
+// Add this with your other event listeners
+document.getElementById('themeInfo').addEventListener('click', () => {
+  const themeDescription = document.querySelector('.theme-description');
+  themeDescription.scrollIntoView({ behavior: 'smooth' });
+});
+
 // Handle URL hash changes
 function handleHashChange() {
   const hash = window.location.hash;
