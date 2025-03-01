@@ -142,7 +142,7 @@ document.addEventListener('touchmove', e => {
 // Update theme description
 function updateThemeDescription() {
   const description = themeData[currentTheme].description;
-  themeDescription.innerHTML = `<p>${description}</p>`;
+  themeDescription.innerHTML = `<h3>Описание выбранной темы</h3><p>${description}</p>`;
 }
 
 // Calendar Functions

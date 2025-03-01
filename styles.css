@@ -322,12 +322,6 @@ select:hover {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-.theme-description p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: var(--text-color);
-}
-
 .popup {
   display: none;
   position: fixed;
@@ -436,6 +430,11 @@ select:hover {
   color: var(--text-color);
   font-weight: 500;
   transition: all 0.3s ease;
+}
+
+.dark-theme .accordion-header {
+  background-color: var(--background-color);
+  color: #fff;
 }
 
 .accordion-header:hover {
@@ -662,12 +661,6 @@ select:hover {
     margin-top: 15px;
     padding: 10px;
     gap: 15px;
-  }
-
-  .social-links a {
-    font-size: 1rem;
-    width: 35px;
-    height: 35px;
   }
 
   .creator-credit {
