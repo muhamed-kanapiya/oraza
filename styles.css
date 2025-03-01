@@ -676,9 +676,14 @@ select:hover {
   .popup-content {
     width: calc(100% - 30px);
     max-width: none;
-    margin: 40dvh 15px 15px 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
     border-radius: 12px;
-    max-height: calc(100vh - 30px);
+    max-height: 80vh;
+    overflow-y: auto;
   }
 }
 

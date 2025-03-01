@@ -121,6 +121,21 @@ window.addEventListener('scroll', () => {
   });
 });
 
+function checkUrlTheme() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const theme = urlParams.get('theme');
+  if (theme === 'dark') {
+    document.body.classList.add('dark-theme');
+    localStorage.setItem('theme', 'dark');
+  }
+}
+
+// Call this function when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+  checkUrlTheme();
+  // ... rest of your initialization code
+});
+
 // Mouse move effect for radial background
 document.addEventListener('mousemove', e => {
   const x = (e.clientX / window.innerWidth) * 100;
